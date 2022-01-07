@@ -1,0 +1,7 @@
+@mixin prefixes($transform) {
+    transform: $transform;
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+}

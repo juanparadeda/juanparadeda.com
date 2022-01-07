@@ -1,0 +1,11 @@
+%title-format {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0.3125rem 1.5625rem;
+}
+
+%boxes {
+    background-color: $dark-blue;
+    border: solid $lighter-green 1px;
+    border-radius: 5px;
+}

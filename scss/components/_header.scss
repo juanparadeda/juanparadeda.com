@@ -1,0 +1,47 @@
+header {
+    width: 100%;
+    h1 {
+        background-image: linear-gradient(to right, #00CAFB, #062F64);
+        background-size: cover;
+        @extend %title-format;
+        font-size: 3rem;
+        color: $almost-black;
+    }
+    h2{
+        @extend %title-format;
+        font-size: 2rem;
+        background-color: $almost-black-lo;
+        color: $lighter-green;
+        text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.55);   
+    }
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: $almost-black-lo;
+    ul{
+        margin: 0;
+        padding: 20px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        li{
+            a {
+                @extend %boxes;
+                text-decoration: none;
+                color: $mid-green;
+                transition: all 0.5s;
+                padding: 5px 10px;
+                margin: 0 10px;
+                font-size: 1.3rem;
+                &:hover{
+                    color: $lighter-green;
+                    box-shadow: 0 0 20px 6px $lighter-green-lo;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,23 @@
+.about-me{
+    .flex-container{
+        margin: 0 auto;
+        @extend %boxes;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 200px;
+            margin: 20px;
+        }
+        div {
+            width: 400px;
+            margin: 20px;
+            p {
+                color: $lighter-blue;
+                font-size: 2rem;
+            }
+        }
+    }
+}
