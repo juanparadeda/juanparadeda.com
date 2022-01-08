@@ -20,6 +20,7 @@ nav{
     position: sticky;
     top: 0;
     background-color: $almost-black-lo;
+    z-index: 50;
     ul{
         margin: 0;
         padding: 20px;
@@ -28,7 +29,7 @@ nav{
         justify-content: center;
         li{
             a {
-                @extend %boxes;
+                @extend %dark-box;
                 text-decoration: none;
                 color: $mid-green;
                 transition: all 0.5s;

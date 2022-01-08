@@ -5,10 +5,24 @@ h3, header h2, header h1 {
   padding: 0.3125rem 1.5625rem;
 }
 
-.about-me .flex-container, nav ul li a {
+.certification-container div, .experience-container .experience-card div, .about-me .flex-container, nav ul li a {
   background-color: #000f22;
   border: solid #0be0d2 1px;
   border-radius: 5px;
+}
+
+.experience-container .experience-card {
+  background-color: #00C8F8;
+  border-radius: 5px;
+}
+
+.certification-container, .experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
 }
 
 header {
@@ -31,6 +45,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: rgba(0, 5, 23, 0.8);
+  z-index: 50;
 }
 nav ul {
   margin: 0;
@@ -55,7 +70,7 @@ nav ul li a:hover {
 main .pic-slogan {
   display: flex;
   flex-wrap: wrap;
-  margin: 170px 0;
+  margin: 220px 0;
   justify-content: center;
   align-items: center;
 }
@@ -83,7 +98,7 @@ main .pic-slogan div p {
 }
 
 .about-me .flex-container {
-  margin: 0 auto;
+  margin: 50px auto;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -93,14 +108,67 @@ main .pic-slogan div p {
 .about-me .flex-container img {
   width: 200px;
   margin: 20px;
+  filter: drop-shadow(0 0 6.5px #00C8F8);
 }
 .about-me .flex-container div {
-  width: 400px;
+  width: 600px;
   margin: 20px;
 }
 .about-me .flex-container div p {
   color: #00C8F8;
   font-size: 2rem;
+}
+
+.experience-container .experience-card {
+  display: inline;
+  background: linear-gradient(160deg, #00CAFB 30%, #062F64);
+  box-shadow: 0 0 25px 2px rgba(11, 224, 210, 0.2);
+  width: 400px;
+  margin: 20px;
+}
+.experience-container .experience-card h4 {
+  display: inline-block;
+  width: 90%;
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem 1.2rem;
+  color: #000f22;
+  font-weight: 960;
+}
+.experience-container .experience-card h5 {
+  display: inline-block;
+  width: 90%;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 1.2rem;
+  color: #056e49;
+  font-weight: 850;
+}
+.experience-container .experience-card h6 {
+  display: inline-block;
+  width: 90%;
+  font-size: 1rem;
+  margin: 0 0 0.2rem 1.2rem;
+  color: #000f22;
+}
+.experience-container .experience-card div {
+  margin: 0 1.2rem 1rem 1.2rem;
+}
+.experience-container .experience-card div p {
+  font-size: 12px;
+  margin: 0.75rem 1rem;
+  color: #0be0d2;
+  line-height: 1.5rem;
+  font-weight: 550;
+}
+
+.certification-container div {
+  margin: 20px;
+  background: linear-gradient(160deg, #00C8F8 30%, #0be0d2);
+  box-shadow: 0 0 25px 2px rgba(11, 224, 210, 0.2);
+}
+.certification-container div img {
+  width: 300px;
+  height: auto;
+  margin: 20px;
 }
 
 body {
@@ -112,7 +180,7 @@ body {
 
 h3 {
   font-size: 1.7rem;
-  margin-bottom: 3.4em;
+  margin: 5em 0 2em 0;
   color: #0be0d2;
   text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.55);
   text-align: center;
@@ -120,7 +188,7 @@ h3 {
 
 span {
   position: relative;
-  top: -5rem;
+  top: -12rem;
 }
 
 /*# sourceMappingURL=style.css.map */

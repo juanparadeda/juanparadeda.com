@@ -1,0 +1,14 @@
+.certification-container {
+    @extend %flex-container;
+    div {
+        margin: 20px;
+        @extend %dark-box;
+        background: linear-gradient(160deg, $lighter-blue 30%, $lighter-green);
+        box-shadow: 0 0 25px 2px $lighter-green-lo;
+        img {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+        }
+    }
+}

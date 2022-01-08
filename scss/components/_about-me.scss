@@ -1,7 +1,7 @@
 .about-me{
     .flex-container{
-        margin: 0 auto;
-        @extend %boxes;
+        margin: 50px  auto;
+        @extend %dark-box;
         width: 70%;
         display: flex;
         flex-wrap: wrap;
@@ -10,9 +10,10 @@
         img{
             width: 200px;
             margin: 20px;
+            filter: drop-shadow(0 0 6.5px $lighter-blue);
         }
         div {
-            width: 400px;
+            width: 600px;
             margin: 20px;
             p {
                 color: $lighter-blue;
