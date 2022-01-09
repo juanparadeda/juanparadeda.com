@@ -12,3 +12,35 @@
         }
     }
 }
+.credly-container {
+    @extend %flex-container;
+    width: 50%;
+    @extend %dark-box;
+    position: relative;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    .credly-text {
+        margin: 20px;
+        p {
+            margin: 0;
+            color: $dark-green;
+            font-size: 2.5rem;
+        }
+    }
+    img {
+        margin: 20px;
+        width: 175px;
+    }
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 0;
+    }
+    &:hover {
+        @extend %link-hover;
+    }
+}
