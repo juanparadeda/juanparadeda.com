@@ -1,0 +1,64 @@
+.contact-container {
+    @extend %flex-container;
+    @extend %dark-box;
+    justify-content: flex-start;
+    width: 30%;
+    color: $dark-green;
+    transition: all 0.5s;
+    position: relative;
+    div {
+        margin: 20px;
+        p {
+            margin: 0px;
+            font-size: 1.2rem;
+        }
+    }
+    i {
+        flex-shrink: 2;
+        margin: 20px;
+    }
+    &:hover {
+        @extend %link-hover;
+    }
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 0;
+    }
+}
+
+
+.map-title-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 0 auto;
+    i {
+        color: $lighter-blue;
+        margin-right: 10px;
+    }
+    h4 {
+        color: $mid-green;
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+}
+
+
+.map-container {
+    box-shadow: 0 0 10px 10px $lighter-green-lo;
+    opacity: 0.75;
+    width: 70%;
+    height: 550px;
+    @extend %dark-box;
+    border: none;
+    margin: 20px auto 40px auto;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
