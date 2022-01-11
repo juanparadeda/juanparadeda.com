@@ -5,14 +5,14 @@ h3, header h2, header h1 {
   padding: 0.3125rem 1.5625rem;
 }
 
-.map-container, .contact-container, .credly-container, .certification-container div, .experience-container .experience-card div, .about-me .flex-container, nav ul li a {
+.map-container, .contact-container, .credly-container, .certification-container div, .experience-container .experience-card div, .about-me .flex-container, .lets-talk-button a:hover, nav ul li a {
   background-color: #000f22;
   border: solid #0be0d2 1px;
   border-radius: 5px;
 }
 
 .experience-container .experience-card {
-  background-color: #00C8F8;
+  background: linear-gradient(160deg, #00C8F8 30%, #0be0d2);
   border-radius: 5px;
 }
 
@@ -68,10 +68,22 @@ nav ul li a {
   margin: 0 10px;
   font-size: 1.3rem;
 }
+nav ul li a h6 {
+  display: inline;
+  color: #08a870;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+nav ul li a .navbar-icon {
+  display: none;
+  width: 20px;
+  height: 20px;
+  color: #08a870;
+}
 main .pic-slogan {
   display: flex;
   flex-wrap: wrap;
-  margin: 270px 0 330px 0;
+  margin: 175px 0 15px 0;
   justify-content: center;
   align-items: center;
 }
@@ -96,6 +108,23 @@ main .pic-slogan div p {
   font-style: italic;
   font-size: 2rem;
   text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.55);
+}
+
+.lets-talk-button {
+  text-align: center;
+  margin: 40px 0 325px 0;
+}
+.lets-talk-button a {
+  border-radius: 5px;
+  background-color: #00C8F8;
+  text-decoration: none;
+  transition: all 1s;
+  color: #000f22;
+  font-size: 3rem;
+  padding: 5px 40px;
+}
+.lets-talk-button a:hover {
+  color: #0be0d2;
 }
 
 .about-me .flex-container {
@@ -177,6 +206,7 @@ main .pic-slogan div p {
   position: relative;
   transition: all 0.5s;
   margin-bottom: 20px;
+  min-width: 270px;
 }
 .credly-container .credly-text {
   margin: 20px;
@@ -205,6 +235,7 @@ main .pic-slogan div p {
   color: #056e49;
   transition: all 0.5s;
   position: relative;
+  min-width: 130px;
 }
 .contact-container div {
   margin: 20px;
@@ -256,6 +287,66 @@ main .pic-slogan div p {
   height: 100%;
 }
 
+footer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px #00C8F8;
+  margin-top: 100px;
+}
+
+.personal-info {
+  list-style-type: none;
+}
+.personal-info li {
+  color: #08a870;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.icons {
+  width: 300px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icons li {
+  text-decoration: none;
+}
+.icons li a i {
+  color: #08a870;
+  transition: all 0.2s;
+}
+.icons li a i:hover {
+  color: #0be0d2;
+}
+
+@media only screen and (max-width: 1350px) {
+  .contact-container {
+    justify-content: center;
+  }
+  .contact-container div {
+    display: none;
+  }
+  .contact-container div p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  nav ul li a h6 {
+    display: none;
+  }
+  nav ul li a .navbar-icon {
+    display: inline;
+  }
+
+  :root {
+    font-size: 12px;
+  }
+}
 .particles {
   width: 100%;
   height: 100vh;

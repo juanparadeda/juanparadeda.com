@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1350px){
+    .contact-container {
+        justify-content: center;
+        div {
+            display: none;
+            p {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 850px){
+    nav {
+        ul {
+            li{ 
+                a {
+                    h6{ 
+                        display: none;
+                    }
+                    .navbar-icon {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+    :root {
+        font-size: 12px;
+    } 
+}

@@ -2,7 +2,7 @@ main {
     .pic-slogan{
         display: flex;
         flex-wrap: wrap;
-        margin: 270px 0 330px 0;
+        margin: 175px 0 15px 0;
         justify-content: center;
         align-items: center;
         img {
@@ -27,6 +27,23 @@ main {
                 text-shadow: 3px 3px 10px rgb(175 238 253 / 55%);
 
             }
+        }
+    }
+}
+.lets-talk-button {
+    text-align: center;
+    margin: 40px 0 325px 0;
+    a {
+        border-radius: 5px;
+        background-color: $lighter-blue;
+        text-decoration: none;
+        transition: all 1s;
+        color: $dark-blue;
+        font-size: 3rem;
+        padding: 5px 40px;
+        &:hover{
+            @extend %dark-box;
+            color: $lighter-green;
         }
     }
 }

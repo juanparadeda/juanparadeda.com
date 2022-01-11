@@ -36,6 +36,18 @@ nav{
                 padding: 5px 10px;
                 margin: 0 10px;
                 font-size: 1.3rem;
+                h6 {
+                    display: inline;
+                    color: $mid-green;
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                }
+                .navbar-icon {
+                    display: none;
+                    width: 20px;
+                    height: 20px;
+                    color: $mid-green;
+                }
                 &:hover{
                     @extend %link-hover;
                 }
