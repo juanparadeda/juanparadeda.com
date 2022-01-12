@@ -401,6 +401,10 @@ footer {
   body {
     overflow-x: hidden;
   }
+
+  main .pic-slogan {
+    margin-top: 40px;
+  }
 }
 .particles {
   width: 100%;
