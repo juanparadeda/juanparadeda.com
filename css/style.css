@@ -146,6 +146,9 @@ main .pic-slogan div p {
   color: #00C8F8;
   font-size: 2rem;
 }
+.about-me .wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
 
 .experience-container .experience-card {
   display: inline;
