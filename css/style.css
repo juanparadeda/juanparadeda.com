@@ -98,9 +98,8 @@ main .pic-slogan div {
   display: inline;
   width: 400px;
   height: 151.27;
-  margin: 0px;
+  margin: 20px 0 0 20px;
   padding: 0px;
-  margin-left: 20px;
 }
 main .pic-slogan div p {
   margin: 0;
@@ -345,6 +344,21 @@ footer {
 
   :root {
     font-size: 12px;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 588px) {
+  footer {
+    justify-content: center;
+  }
+  footer .icons {
+    padding-left: 0;
+  }
+  footer .personal-info {
+    padding-left: 0px;
   }
 }
 .particles {

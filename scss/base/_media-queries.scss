@@ -29,4 +29,19 @@
     :root {
         font-size: 12px;
     } 
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 588px){
+    footer {
+        justify-content: center;
+        .icons {
+            padding-left: 0;
+        }
+        .personal-info {
+            padding-left: 0px;
+        }
+    }
 }
