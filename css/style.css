@@ -98,7 +98,7 @@ main .pic-slogan div {
   display: inline;
   width: 400px;
   height: 151.27;
-  margin: 20px 0 0 20px;
+  margin: 20px 0 20px 20px;
   padding: 0px;
 }
 main .pic-slogan div p {
