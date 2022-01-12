@@ -12,6 +12,12 @@
 }
 
 @media only screen and (max-width: 850px){
+    :root {
+        font-size: 12px;
+    }
+    h1, h2 {
+        text-align: center;
+    }
     nav {
         ul {
             li{ 
@@ -26,15 +32,19 @@
             }
         }
     }
-    :root {
-        font-size: 12px;
-    } 
-    h1, h2 {
-        text-align: center;
-    }
 }
 
 @media only screen and (max-width: 588px){
+    :root {
+        font-size: 10px;
+    }
+    .about-me {
+        .flex-container{
+            img {
+                width: 150px;
+            }
+        }
+    }
     footer {
         justify-content: center;
         .icons {
