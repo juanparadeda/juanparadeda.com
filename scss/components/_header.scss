@@ -18,7 +18,7 @@ header {
 
 nav{
     position: sticky;
-    top: 0;
+    top: -2px;
     background-color: $almost-black-lo;
     z-index: 50;
     ul{
@@ -27,14 +27,13 @@ nav{
         list-style-type: none;
         display: flex;
         justify-content: center;
-        align-items: center;
         li{
             a {
                 @extend %dark-box;
                 text-decoration: none;
                 color: $mid-green;
                 transition: all 0.5s;
-                padding: 15px 15px;
+                padding: 8px 15px;
                 margin: 0 10px;
                 
                 h6 {
@@ -42,6 +41,7 @@ nav{
                     color: $mid-green;
                     font-size: 1.3rem;
                     font-weight: 400;
+                    vertical-align: middle;
                 }
                 .navbar-icon {
                     display: none;

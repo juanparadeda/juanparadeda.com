@@ -49,7 +49,7 @@ header h2 {
 
 nav {
   position: sticky;
-  top: 0;
+  top: -2px;
   background-color: rgba(0, 5, 23, 0.8);
   z-index: 50;
 }
@@ -59,13 +59,12 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 nav ul li a {
   text-decoration: none;
   color: #08a870;
   transition: all 0.5s;
-  padding: 15px 15px;
+  padding: 8px 15px;
   margin: 0 10px;
 }
 nav ul li a h6 {
@@ -73,6 +72,7 @@ nav ul li a h6 {
   color: #08a870;
   font-size: 1.3rem;
   font-weight: 400;
+  vertical-align: middle;
 }
 nav ul li a .navbar-icon {
   display: none;
@@ -152,8 +152,9 @@ main .pic-slogan div p {
   background: linear-gradient(160deg, #00CAFB 30%, #062F64);
   box-shadow: 0 0 25px 2px rgba(11, 224, 210, 0.2);
   width: 400px;
-  height: 320px;
+  height: 340px;
   margin: 20px;
+  min-width: 250px;
 }
 .experience-container .experience-card h4 {
   display: inline-block;
@@ -232,7 +233,7 @@ main .pic-slogan div p {
 .contact-container {
   justify-content: flex-start;
   width: 30%;
-  color: #056e49;
+  color: #08a870;
   transition: all 0.5s;
   position: relative;
   min-width: 130px;
@@ -344,11 +345,21 @@ footer {
     text-align: center;
   }
 
+  nav ul li a {
+    padding: 15px 15px;
+  }
   nav ul li a h6 {
     display: none;
   }
   nav ul li a .navbar-icon {
     display: inline;
+  }
+
+  .experience-container .experience-card {
+    height: unset;
+  }
+  .experience-container .experience-card div {
+    height: unset;
   }
 }
 @media only screen and (max-width: 588px) {

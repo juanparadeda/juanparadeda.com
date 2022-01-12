@@ -6,8 +6,9 @@
         background: linear-gradient(160deg, #00CAFB 30%, #062F64);
         box-shadow: 0 0 25px 2px $lighter-green-lo;
         width: 400px;
-        height: 320px;
+        height: 340px;
         margin: 20px;
+        min-width: 250px;
         h4 {
             display: inline-block;
             width: 90%;

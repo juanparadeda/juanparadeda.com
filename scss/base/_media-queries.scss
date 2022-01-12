@@ -22,6 +22,7 @@
         ul {
             li{ 
                 a {
+                    padding: 15px 15px;
                     h6{ 
                         display: none;
                     }
@@ -29,6 +30,14 @@
                         display: inline;
                     }
                 }
+            }
+        }
+    }
+    .experience-container {
+        .experience-card {
+            height: unset;
+            div {
+                height: unset;
             }
         }
     }
