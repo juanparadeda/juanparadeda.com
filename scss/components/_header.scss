@@ -27,15 +27,16 @@ nav{
         list-style-type: none;
         display: flex;
         justify-content: center;
+        align-items: center;
         li{
             a {
                 @extend %dark-box;
                 text-decoration: none;
                 color: $mid-green;
                 transition: all 0.5s;
-                padding: 5px 10px;
+                padding: 15px 15px;
                 margin: 0 10px;
-                font-size: 1.3rem;
+                
                 h6 {
                     display: inline;
                     color: $mid-green;
@@ -44,9 +45,8 @@ nav{
                 }
                 .navbar-icon {
                     display: none;
-                    width: 20px;
-                    height: 20px;
                     color: $mid-green;
+                    vertical-align: middle;
                 }
                 &:hover{
                     @extend %link-hover;
