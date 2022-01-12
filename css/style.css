@@ -291,6 +291,10 @@ main .pic-slogan div p {
   height: 100%;
 }
 
+.aos {
+  top: 0;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap-reverse;
