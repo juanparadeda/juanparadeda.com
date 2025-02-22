@@ -1,539 +1,456 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body{
-    animation: transitionIn 1s;
-    margin: 0px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: black;
-    overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+h3, header h2, header h1 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.3125rem 1.5625rem;
 }
+
+.map-container, .contact-container, .credly-container, .certification-container div, .experience-container .experience-card div, .about-me .flex-container, .lets-talk-button a:hover, nav ul li a {
+  background-color: #000f22;
+  border: solid #0be0d2 1px;
+  border-radius: 5px;
+}
+
+.flex-container div p a {
+  text-decoration: none;
+  color: #0be0d2;
+  transition: all 0.5s;
+}
+.flex-container div p a:hover{
+  color: #b2eefd;
+  transition: all 0.5s;
+}
+
+.experience-container .experience-card {
+  background: linear-gradient(160deg, #00C8F8 30%, #0be0d2);
+  border-radius: 5px;
+}
+
+.contact-container, .credly-container, .certification-container, .experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px auto;
+}
+
+.contact-container:hover, .credly-container:hover, nav ul li a:hover {
+  color: #0be0d2;
+  box-shadow: 0 0 20px 6px rgba(11, 224, 210, 0.2);
+  filter: brightness(2);
+}
+
 header {
-    animation: transitionIn 1.5s;
-    display: flex;
-    height: 70px;
-    width: 100vw;
-    /*min-height: 90px;*/
-    background-image: linear-gradient(to right, #00CAFB, #062F64);
-    background-size: cover;
-    align-items: center;
-    /*z-index: 5;*/
-    position: absolute;
+  width: 100%;
 }
-h1 {
-    display: inline-block;
-    margin: 0;
-    font-size: 50px;
-    padding: 0 0 0 2.19vw;
-    color: #000517;
-    text-transform: uppercase;   
+header h1 {
+  background-image: linear-gradient(to right, #00CAFB, #062F64);
+  background-size: cover;
+  font-size: 3rem;
+  color: #000517;
 }
-#main-area{
-    /*animation: transitionIn 1.5s;*/
-    display: flex;
-    flex-direction: column;
-    top: 70px;
-    width: 100vw;
-    height: calc(100vh - 70px);
-    background-image: url(../images/bib.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    position: fixed;
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: 4;
-}
-h2{
-    animation: transitionIn 2s;
-    display: inline-block;
-    margin: 0;
-    font-size: 32px;
-    color: rgba(11, 224, 210);
-    padding: 1.69vh 0 0 2.19vw;
-    text-transform: uppercase;
-    text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.55);
-    
+header h2 {
+  font-size: 2rem;
+  background-color: rgba(0, 5, 23, 0.8);
+  color: #0be0d2;
+  text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.55);
 }
 
+nav {
+  position: sticky;
+  top: -2px;
+  background-color: rgba(0, 5, 23, 0.8);
+  z-index: 50;
+}
+nav ul {
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #08a870;
+  transition: all 0.5s;
+  padding: 8px 15px;
+  margin: 0 10px;
+}
+nav ul li a h6 {
+  display: inline;
+  color: #08a870;
+  font-size: 1.3rem;
+  font-weight: 400;
+  vertical-align: middle;
+}
+nav ul li a .navbar-icon {
+  display: none;
+  color: #08a870;
+  vertical-align: middle;
+}
+main .pic-slogan {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 175px 0 15px 0;
+  justify-content: center;
+  align-items: center;
+}
+main .pic-slogan img {
+  width: 151.27px;
+  height: 151.27px;
+  border: solid 1px #0be0d2;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+main .pic-slogan div {
+  display: inline;
+  width: 400px;
+  height: 151.27;
+  margin: 20px 0 20px 20px;
+  padding: 0px;
+}
+main .pic-slogan div p {
+  margin: 0;
+  color: #00C8F8;
+  font-style: italic;
+  font-size: 2rem;
+  text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.55);
+}
 
-.central-content{
-    animation: transitionIn 2.5s;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-    height: 78.37vh;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    align-items: center;
+.lets-talk-button {
+  text-align: center;
+  margin: 40px 0 325px 0;
+}
+.lets-talk-button a {
+  border-radius: 5px;
+  background-color: #00C8F8;
+  text-decoration: none;
+  transition: all 1s;
+  color: #000f22;
+  font-size: 3rem;
+  padding: 5px 40px;
+}
+.lets-talk-button a:hover {
+  color: #0be0d2;
+}
+
+.about-me .flex-container {
+  margin: 50px auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-me .flex-container img {
+  width: 200px;
+  margin: 20px;
+  filter: drop-shadow(0 0 6.5px #00C8F8);
+}
+.about-me .flex-container div {
+  width: 600px;
+  margin: 20px;
+}
+.about-me .flex-container div p {
+  color: #00C8F8;
+  font-size: 2rem;
+}
+.about-me .wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.experience-container .experience-card {
+  background: linear-gradient(160deg, #00CAFB 30%, #062F64);
+  box-shadow: 0 0 25px 2px rgba(11, 224, 210, 0.2);
+  width: 400px;
+  height: 340px;
+  margin: 20px;
+}
+.experience-container .experience-card h4 {
+  display: inline-block;
+  width: 90%;
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem 1.2rem;
+  color: #000f22;
+  font-weight: 960;
+}
+.experience-container .experience-card h5 {
+  display: inline-block;
+  width: 90%;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 1.2rem;
+  color: #056e49;
+  font-weight: 850;
+}
+.experience-container .experience-card h6 {
+  display: inline-block;
+  width: 90%;
+  font-size: 1rem;
+  margin: 0 0 0.2rem 1.2rem;
+  color: #000f22;
+}
+.experience-container .experience-card div {
+  height: 210px;
+  margin: 0 1.2rem 1rem 1.2rem;
+}
+.experience-container .experience-card div p {
+  font-size: 12px;
+  margin: 0.75rem 1rem;
+  color: #0be0d2;
+  line-height: 1.8rem;
+  font-weight: 550;
+}
+
+.certification-container div {
+  margin: 20px;
+  background: linear-gradient(160deg, #00C8F8 30%, #0be0d2);
+  box-shadow: 0 0 25px 2px rgba(11, 224, 210, 0.2);
+}
+.certification-container div img {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+}
+
+.credly-container {
+  width: 50%;
+  position: relative;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+  min-width: 270px;
+}
+.credly-container .credly-text {
+  margin: 20px;
+}
+.credly-container .credly-text p {
+  margin: 0;
+  color: #056e49;
+  font-size: 2.5rem;
+}
+.credly-container img {
+  margin: 20px;
+  width: 175px;
+}
+.credly-container a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+}
+.contact-container {
+  justify-content: flex-start;
+  width: 30%;
+  color: #08a870;
+  transition: all 0.5s;
+  position: relative;
+  min-width: 130px;
+}
+.contact-container div {
+  margin: 20px;
+}
+.contact-container div p {
+  margin: 0px;
+  font-size: 1.2rem;
+}
+.contact-container i {
+  flex-shrink: 2;
+  margin: 20px;
+}
+.contact-container a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+}
+
+.map-title-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto 0 auto;
+}
+.map-title-area i {
+  color: #00C8F8;
+  margin-right: 10px;
+}
+.map-title-area h4 {
+  color: #08a870;
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+
+.map-container {
+  box-shadow: 0 0 10px 10px rgba(11, 224, 210, 0.2);
+  opacity: 0.75;
+  width: 70%;
+  height: 550px;
+  border: none;
+  margin: 20px auto 40px auto;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px #00C8F8;
+  margin-top: 100px;
+}
+
+.personal-info {
+  list-style-type: none;
+}
+.personal-info li {
+  color: #08a870;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.icons {
+  width: 300px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icons li {
+  text-decoration: none;
+}
+.icons li a i {
+  color: #08a870;
+  transition: all 0.2s;
+}
+.icons li a i:hover {
+  color: #0be0d2;
+}
+
+@media only screen and (max-width: 1350px) {
+  .contact-container {
     justify-content: center;
-}
-#picandslogan{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: auto;
-    height: auto;
-    /*animation: transitionIn 0.5s;*/
-}
-.notvisible{
-    opacity: 0;
-    transition: .5s;
-}
-.visible{
-    animation: transitionIn 0.5s;
-}
-#profile-pic{
-    display: inline;
-    margin: 0px;
-    padding: 0px;
-    margin-right: 25px;
-    width: 151.27px;
-    height: 151.27px;
-    border: 2px solid rgba(11, 224, 210);
-    background-image: url(../images/fd.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-}
-
-#slogan {
-    display: inline;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 25px;
-    width: 442px;
-    height: 151.27px;
-}
-#slogan-text {
-    margin: 0px;
-    font-style: italic;
-    color: #00C8F8;
-    font-size: 31.5px;
-    text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.55);
-}
-#about{
+  }
+  .contact-container div {
     display: none;
-    color: #00C8F8;
-    flex-direction: column;
-    width: 840px;
-    height: auto;
-    margin: 40px 0 40px 0;
-    text-align: justify;
-    overflow-y: auto;
-    /*animation: transitionIn 0.5s;*/
+  }
+  .contact-container div p {
+    display: none;
+  }
 }
-#about > h3{
-    font-size: 27px;
-    text-align: left;
-    color: rgba(8, 168, 112);
-    margin-top: 0;
-    text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.15);
-    
-}
-#about > p{
-    font-size: 17px;
-    text-shadow: 2px 2px 6px rgba(175, 238, 253, 0.15);
-    text-indent: 40px;
-    line-height: 2;
-}
-nav{
-    animation: transitionIn 4s;
-    display: flex;
-    height: auto;
-    width: 100vw;
-    margin: 10px 0 0 0;
-    flex-direction: row;
-    justify-content: center;
-    position: fixed;
-    z-index: 10;
-    bottom: 0px;
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px 10px 0 0;
-    background-color: rgba(0, 139, 173, 0.7);
-    color: rgba(11, 224, 210);
+@media only screen and (max-width: 850px) {
+  :root {
     font-size: 12px;
-    text-shadow: 1.5px 1.5px 4px rgba(175, 238, 253, 0.55);
-    transition: 0.5s;
-    /*box-shadow: 3px -3px 10px rgba(175, 238, 253, 0.55);*/
-}
-ul > li{
-    float: left;
-    margin: 0;
-    padding: 0 5px 0 5px;
-    opacity: 1;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
+  }
 
-#experience{
+  h1, h2 {
+    text-align: center;
+  }
+
+  nav ul li a {
+    padding: 15px 15px;
+  }
+  nav ul li a h6 {
     display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: #00C8F8;
-    text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.3);
-    align-items: baseline;
-    justify-content: space-around;
-    margin: 5px;
-    width: 95vw;
-    height: auto;
-    margin-bottom: 10px;
-}
-#experience > .employer{
-    width: 30%;
-    height: 210px;
-    margin: 20px 20px 30px 20px;
-    padding: 0.5%;
-    min-width: 200px;
-    width: 307px;
-}
-.employer >h3{
-    color: rgba(11, 224, 210);
-    margin: 7px 0 7px 0;
-}
-.employer > h4{
-    color: rgba(11, 224, 210);
-    margin: 5px 0 5px 0;  
-    font-weight: 800;
-}
-.employer >p{
-    text-align: justify;
-    color: rgba(0,200,248);
-    line-height: 150%;
-    font-size: 11.5px;
-}
-#contact{
-    display: none;
-    width: 90vw;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-around;
-    height: auto;
-    margin: 30px;
-}
-#whatsappqr{
-    height: 300px;
-    width: 200px;
-    background-image: url(../images/wpqr.jpg);
-    background-size: cover;
-    background-position: center;  
-    margin: 0;
-}
-.contactmedia{
-    padding: 20px;
-    margin: 60px 20px 60px 20px;
-}
-#whatsapp{
-    background: linear-gradient(180deg, rgba(8,168,112,1) 0%, rgba(8,168,112,0) 100%);
-}
-#skype , #linkedin{
-    background: linear-gradient(180deg, rgba(0,63,167,1) 0%, rgba(0,63,167,0) 100%);
-}
-#whatsapplogo{
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/wl.png);
-    background-size: cover;
-    background-position: center;
-    margin: 0 0 25px 75px;
-}
-#skypelogo{
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/sl.png);
-    background-size: cover;
-    background-position: center;
-    margin: 0 0 25px 75px;
-}
-#linkedinlogo{
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/lil.png);
-    background-size: cover;
-    background-position: center;
-    margin: 0 0 25px 75px;
-}
-#skypeqr{
-    height: 300px;
-    width: 200px;
-    background-image: url(../images/skqr.jpg);
-    background-size: cover;
-    background-position: center;  
-    margin: 0;
-}
-#linkedinqr{
-    height: 300px;
-    width: 200px;
-    background-image: url(../images/liqr.jpg);
-    background-size: cover;
-    background-position: center;  
-    margin: 0;
-}
-/*
+  }
+  nav ul li a .navbar-icon {
+    display: inline;
+  }
 
-///////////                                       ///////////
-///////////             MEDIA QUERIES             ///////////
-///////////                                       ///////////
-
-*/
-
-@media (min-width:770px){
-    ul:hover{
-        color: #008DB0;
-        font-size: 17px;
-        text-shadow: 2px 2px 5px rgba(175, 238, 253, 0.1);
-        padding-bottom: 10px;
-        padding-top: 10px;
-        transition: 0.5s;
-    }
-    li:hover{
-        color: rgba(11, 224, 210);
-        text-shadow: 2px 2px 5px rgba(175, 238, 253, 0.8);
-        transition: 0.25s;
-    }
-    #experience > .employer{
-    background: none;
-    }
-    #experience > .employer:hover {
-    background-color: rgba(13, 252, 169, 0.1);
-    transition: 0.25s;
-    box-shadow: 10px 10px 20px rgba(13, 255, 170, 0.15);
-    }
-    .employer > h3{
-        color: rgba(8, 168, 112);
-    }
-    .employer > h4{
-        color: rgba(5, 110, 73);
-    }
-    .employer:hover > h3{
-        color: rgba(11, 224, 210);
-        transition: 0.25s;
-    }
-    .employer:hover > h4{
-        color: rgba(11, 224, 210);
-        transition: 0.25s;
-    } 
-    .employer >p{
-    text-align: justify;
-    text-justify: inter-character ;
-    color: rgba(0, 161, 201);
-    }
-    .employer:hover > p{
-        color: rgba(0,200,248);
-        transition: 0.25s;
-    }
-    .contactmedia > h3{
-        color: rgba(8, 168, 112);
-    }
-    #whatsapp.contactmedia:hover{
-        box-shadow: 10px 10px 20px rgba(13, 255, 170, 0.4);
-        transition: 0.25s;
-    }
-    #skype.contactmedia:hover{
-    box-shadow: 10px 10px 20px rgba(0, 63, 167, 0.5);
-    transition: 0.25s;
-    }
-    #linkedin.contactmedia:hover{
-    box-shadow: 10px 10px 20px rgba(0, 63, 167, 0.5);
-    transition: 0.25s;
-    }
+  .experience-container .experience-card {
+    height: unset;
+  }
+  .experience-container .experience-card div {
+    height: unset;
+  }
 }
-
-@media (min-width: 601px) and (max-width: 930px){
-    #main-area{
-        animation: none;
-    }
-    h2{
-        font-size: 24px;
-    }
-    #profile-pic{
-        margin-right: 18.75px;
-        width: 113.45px;
-        height: 113.45px;
-        border: 1.5px solid #00C8F8;
-    }
-    #slogan {
-        margin-left: 18.75px;
-        width: 331.5px;
-        height: 113.45px;
-    }
-    #slogan-text{
-        font-size: 23.62px;
-    }
-    #about{
-        width: 92vw;
-    }
-    #about > h3{
-        font-size: 22px;
-    }
-    #about > p{
-        line-height: 1.5;
-    }
-    #experience > .employer{
-        height: auto;
-    }
-}
-/*@media (max-height: 540px){
-    #main-area{
-        animation: none;
-    }
-    h2{
-        font-size: 24px;
-    }
-
-    #profile-pic{
-        margin-right: 18.75px;
-        width: 113.45px;
-        height: 113.45px;
-        border: 1.5px solid #00C8F8;
-    }
-    #slogan {
-        margin-left: 18.75px;
-        width: 331.5px;
-        height: 113.45px;
-    }
-    #slogan-text{
-        font-size: 23.62px;
-    }
-}*/
-/*    #about{
-        width: 500px;
-        height: 400px;
-    }
-    #about > h3{
-        font-size: 22px;
-    }
-    #about > p{
-        font-size: 15px;
-    }*/
-@media (min-width: 381px) and (max-width: 600px){
-    header {
-        height: 54px;
-        animation: none;
-    }
-    #main-area{
-        top: 54px;
-        height: calc(100vh - 54px);
-        animation: none;
-    }
-    h1{
-        font-size: 25px;
-    }
-    h2{
-        font-size: 16px;
-    }
-    #picandslogan{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: auto;
-        height: auto;
-        animation: none;
-    }
-    #profile-pic{
-        margin: 0 0 15px 0;
-
-    }
-    #slogan {
-        margin: 15px 0 0 0;
-        width: 221px;
-        height: 75.63px;
-    }
-    #slogan-text{
-        font-size: 15.75px;
-    }
-    #about{
-        flex-direction: column;
-        align-items: center;
-        width: 92vw;
-    }
-    #about > h3{
-        font-size: 22px;
-    }
-    #about > p{
-        line-height: 1.5;
-    }
-    #experience > .employer{
-        height: auto;
-    }
-}
-
-@media (max-width: 380px){
-        header {
-        height: 54px;
-        animation: none;
-    }
-    #main-area{
-        top: 54px;
-        height: calc(100vh - 54px);
-        animation: none;
-    }
-    h1{
-        font-size: 25px;
-    }
-    h2{
-        font-size: 16px;
-    }
-    #picandslogan{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: auto;
-        height: auto;
-        animation: none;
-    }
-    #profile-pic{
-        margin: 0 0 15px 0;
-
-    }
-    #slogan {
-    margin: 15px 0 0 0;
-    width: 221px;
-    height: 75.63px;
-    }
-            
-    #slogan-text{
-        font-size: 15.75px;
-    }
-    #about{
-        width: 92vw;
-    }
-    #about > h3{
-        font-size: 17px;
-    }
-    #about > p{
-    font-size: 14px;
-    line-height: 1.3;
-    }
-    ul{
+@media only screen and (max-width: 588px) {
+  :root {
     font-size: 10px;
-    }
-    #experience > .employer{
-        height: auto;
-    }
+  }
+
+  .about-me .flex-container img {
+    width: 150px;
+  }
+
+  footer {
+    justify-content: center;
+  }
+  footer .icons {
+    padding-left: 0;
+  }
+  footer .personal-info {
+    padding-left: 0px;
+  }
+
+  .certification-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .experience-card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .experience-container {
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  main .pic-slogan {
+    margin-top: 40px;
+  }
 }
-@keyframes transitionIn{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@keyframes transitionOut{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
+html {
+  scroll-behavior: smooth;
 }
 
+.particles {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: -2;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-size: 1.7rem;
+  margin: 5em 0 2em 0;
+  color: #0be0d2;
+  text-shadow: 3px 3px 10px rgba(175, 238, 253, 0.55);
+  text-align: center;
+}
+
+span {
+  position: relative;
+  top: -12rem;
+}
+
+/*# sourceMappingURL=style.css.map */
